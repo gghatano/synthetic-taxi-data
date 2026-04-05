@@ -1,7 +1,7 @@
 # 再現実験 進捗状況
 
 **論文**: A Systematic Evaluation of Generative Models on Tabular Transportation Data (arXiv:2502.08856)
-**最終更新**: 2026-04-02
+**最終更新**: 2026-04-05
 
 ---
 
@@ -40,7 +40,7 @@
 
 | モデル | 状態 | 備考 |
 |---|---|---|
-| GaussianCopula | **完了** (green) | nexp=3, ngen=5 実行済み。zone側も完了 |
+| GaussianCopula | **完了** | Green N=40k完了 (syn_te R²=80.46, cov=0.57%, 130分)。zone側も完了 |
 | CTGAN | **完了** | nexp=3, ngen=5。syn_te R²=62.32, SDV=82.52, 52.1分 |
 | TVAE | **完了** | nexp=3, ngen=5。syn_te R²=82.92, SDV=81.60, 38.6分 |
 | CTABGAN | **スキップ** | ユーザー判断によりスキップ |
@@ -85,6 +85,7 @@
 | `output/dcr.csv` | プライバシー指標ログ |
 | `output/ctgan_green_syn_total_amount_42_green.csv` | CTGAN green結果 |
 | `output/tvae_green_syn_total_amount_42_green.csv` | TVAE green結果 |
+| `output/gc_green_syn_total_amount_42_green.csv` | GaussianCopula green本実験結果 |
 
 ---
 
